@@ -71,6 +71,12 @@ body{
     color: #f3f3f3;
     cursor: pointer;
 }
-.bio{
-    margin-top: 200px;
+.aboutPage{
+    display: none;
+}
+.workPage{
+    display: none;
+}
+.contactPage{
+    display: none;
 }
