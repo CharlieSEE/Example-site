@@ -1,0 +1,76 @@
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(169, 169, 169);
+    color: #000000;
+}
+#container{
+    display: flex;
+    height: 100vh;
+}
+.leftPanel{
+    /* OPT FIXED LEFT PANEL
+    margin-left: 25px;
+    position: fixed;
+    z-index: 3; */
+    width: 240px;
+    background-color: rgb(131, 128, 128);
+    height: 100vh;
+    min-height: 100%;
+}
+#logo{
+    padding: 15px;
+}
+#logoPNG{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+.leftPanelMenu{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.leftPanelMenuOpt{
+    padding: 25px;
+    margin-top: 5px;
+    transition: color 1s,background-color 1s;
+}
+.leftPanelMenuOpt:hover{
+    background-color: rgb(44, 44, 33);
+    color: #ffffff;
+    cursor: pointer;
+}
+.rightPanel{
+    /* margin-left: 265px; */
+    width: 100%;
+    height: 100vh;
+}
+.landingPageTitle{
+    font-size: 30px;
+    padding: 25px;
+}
+.landingPageImgContainer{
+    padding: 25px;
+}
+#landingPageImg{
+    border-radius: 10px;
+}
+.landingPageSocials{
+    font-size: 44px;
+}
+.ic{
+    padding-top: 45px;
+    padding-left: 5px;
+    transition: color 0.5s;
+}
+.ic:hover{
+    color: #f3f3f3;
+    cursor: pointer;
+}
+.bio{
+    margin-top: 200px;
+}
