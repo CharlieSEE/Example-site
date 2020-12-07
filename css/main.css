@@ -8,6 +8,10 @@ body{
     background-color: rgb(169, 169, 169);
     color: #000000;
 }
+/* img{
+    width: 100%;
+    height: auto;
+} */
 #container{
     display: flex;
     height: 100vh;
@@ -76,6 +80,33 @@ body{
 }
 .workPage{
     display: none;
+}
+.workPageTitle{
+    font-size: 64px;
+    padding-top: 50px;
+}
+.galleryContainer{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1284px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 56px;
+    /* margin-top: 10vh; */
+}
+.galleryItem{
+    width: 350px;
+    height: 200px;
+    padding: 10px;
+}
+.galleryItemImg{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
 }
 .contactPage{
     display: none;
