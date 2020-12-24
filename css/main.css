@@ -17,10 +17,10 @@ body{
     height: 100vh;
 }
 .leftPanel{
-    /* OPT FIXED LEFT PANEL
+    /* OPT FIXED LEFT PANEL */
     margin-left: 25px;
     position: fixed;
-    z-index: 3; */
+    z-index: 3;
     width: 240px;
     background-color: rgb(131, 128, 128);
     height: 100vh;
@@ -49,7 +49,7 @@ body{
     cursor: pointer;
 }
 .rightPanel{
-    /* margin-left: 265px; */
+    margin-left: 265px;
     width: 100%;
     height: 100vh;
 }
@@ -88,8 +88,6 @@ body{
 .galleryContainer{
     display: flex;
     align-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     max-width: 1284px;
     height: 100%;
@@ -107,6 +105,7 @@ body{
     border-radius: 10px;
     max-width: 100%;
     height: auto;
+    padding-top: 20px;
 }
 .contactPage{
     display: none;
