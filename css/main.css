@@ -78,17 +78,66 @@ body{
 .aboutPage{
     display: none;
 }
+.aboutPageTitle{
+    font-size: 30px;
+    padding: 25px;
+}
+.progressBars{
+    width: 450px;
+    height: auto;
+    padding: 25px;
+}
+.progressBarOne{
+    width: 250px;
+    height: 43px;
+    border: 5px solid #121212;
+    border-radius: 5px;
+    margin-top: 25px;
+    background-color: rgb(169, 169, 169);
+}
+.progressBarOneInner{
+    background-color: #121212;
+    width: 75%;
+    height: 43px;
+}
+.progressBarTwo{
+    width: 250px;
+    height: 43px;
+    border: 5px solid #121212;
+    border-radius: 5px;
+    margin-top: 25px;
+    background-color: rgb(169, 169, 169);
+}
+.progressBarTwoInner{
+    background-color: #121212;
+    width: 25%;
+    height: 43px;
+}
+.progressBarThree{
+    width: 250px;
+    height: 43px;
+    border: 5px solid #121212;
+    border-radius: 5px;
+    margin-top: 25px;
+    background-color: rgb(169, 169, 169);
+}
+.progressBarThreeInner{
+    background-color: #121212;
+    width: 100%;
+    height: 43px;
+}
 .workPage{
     display: none;
 }
 .workPageTitle{
-    font-size: 64px;
-    padding-top: 50px;
+    font-size: 30px;
+    padding: 25px;
 }
 .galleryContainer{
     display: flex;
     align-content: center;
     justify-content: center;
+    flex-wrap: wrap;
     max-width: 1284px;
     height: 100%;
     margin-left: auto;
@@ -97,15 +146,16 @@ body{
     /* margin-top: 10vh; */
 }
 .galleryItem{
-    width: 350px;
-    height: 200px;
-    padding: 10px;
+    /* width: 350px;
+    height: 200px; */
+    font-size: inherit;
 }
 .galleryItemImg{
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
-    padding-top: 20px;
+    /* max-width: 100%;
+    height: auto; */
+    width: 350px;
+    height: 200px;
+    padding: 25px;
 }
 .contactPage{
     display: none;
