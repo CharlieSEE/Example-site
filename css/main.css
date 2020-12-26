@@ -42,6 +42,8 @@ body{
     padding: 25px;
     margin-top: 5px;
     transition: color 1s,background-color 1s;
+    -moz-transition: color 1s,background-color 1s;
+    -o-transition: color 1s,background-color 1s;
 }
 .leftPanelMenuOpt:hover{
     background-color: rgb(44, 44, 33);
@@ -87,6 +89,11 @@ body{
     height: auto;
     padding: 25px;
 }
+/* TODO Animacje po kliknieciu storny */
+@keyframes progressBarOneAnim{
+    form{width: 0%;}
+    to{width: 75%;}
+}
 .progressBarOne{
     width: 250px;
     height: 43px;
@@ -99,6 +106,8 @@ body{
     background-color: #121212;
     width: 75%;
     height: 43px;
+    animation-name: progressBarOneAnim;
+    animation-duration: 1s;
 }
 .progressBarTwo{
     width: 250px;
