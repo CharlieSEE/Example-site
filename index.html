@@ -20,12 +20,19 @@
           <img id="logoPNG" src="https://via.placeholder.com/256" alt="LOGO" />
         </div>
         <div class="leftPanelMenu">
-          <div class="leftPanelMenuOpt" id="home">1</div>
-          <div class="leftPanelMenuOpt" id="about">2</div>
-          <div class="leftPanelMenuOpt" id="work">3</div>
-          <div class="leftPanelMenuOpt" id="contact">4</div>
+          <div class="leftPanelMenuOpt" id="home"><i class="fas fa-home"></i></div>
+          <div class="leftPanelMenuOpt" id="about"><i class="fas fa-briefcase"></i></div>
+          <div class="leftPanelMenuOpt" id="work"><i class="fas fa-images"></i></div>
+          <div class="leftPanelMenuOpt" id="contact"><i class="fas fa-address-card"></i></div>
         </div>
         <!-- TODO Socials -->
+        <div class="leftPanelSocials">
+          <i class="ics fab fa-facebook"></i>
+          <i class="ics fab fa-snapchat-square"></i>
+          <i class="ics fab fa-linkedin"></i>
+          <i class="ics fab fa-instagram-square"></i>
+          <i class="ics fab fa-twitter-square"></i>
+        </div>
       </div>
       <div class="rightPanel">
         <div class="landingPage">
@@ -49,7 +56,8 @@
         </div>
         <div class="aboutPage">
           <!-- TODO:Takie fajne paski pokazujące skilla -->
-          <div class="aboutPageTitle">My Skills</div>
+          <div class="aboutPageTitle">Few words about me:</div>
+          <div class="aboutPageArtc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus quisquam alias officiis hic! Facere tempore sit, minus sunt laborum voluptates quod illum vitae voluptatem fugiat fuga! Soluta illum dicta cupiditate?</div>
           <div class="progressBars">
             <div class="progressBarOne">
               <div class="progressBarOneInner"></div>
@@ -65,7 +73,12 @@
         <div class="workPage">
           <!-- TODO:Photo Gallery -->
           <div class="workPageTitle">Some of my work</div>
-          <div class="galleryContainer">
+          <div id="workPageGallery">
+            <img id="workPageGalleryImg" src="/img/img1.png" alt="zdjęcie">
+            <div id="workPageGalleryNavLeft">Lf</div>
+            <div id="workPageGalleryNavRight">Rh</div>
+          </div>
+          <!--ALT straight gallery <div class="galleryContainer">
             <div class="galleryItem">
               <img src="img/img1.png" alt="zdjęcie" class="galleryItemImg" />
             </div>
@@ -95,7 +108,7 @@
             </div>
             <div class="galleryItem">
               <img src="img/img9.png" alt="zdjęcie" class="galleryItemImg" />
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="contactPage">
@@ -119,7 +132,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="footer">All rights reserved</div> -->
     <script src="js/main.js"></script>
   </body>
 </html>

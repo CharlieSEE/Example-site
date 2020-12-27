@@ -1,171 +1,198 @@
-body{
-    height: 100vh;
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(169, 169, 169);
-    color: #000000;
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(169, 169, 169);
+  color: #000000;
 }
 /* img{
     width: 100%;
     height: auto;
 } */
-#container{
-    display: flex;
-    height: 100vh;
+#container {
+  display: flex;
+  height: 100vh;
 }
-.leftPanel{
-    /* OPT FIXED LEFT PANEL */
-    margin-left: 25px;
-    position: fixed;
-    z-index: 3;
-    width: 240px;
-    background-color: rgb(131, 128, 128);
-    height: 100vh;
-    min-height: 100%;
+.leftPanel {
+  /* OPT FIXED LEFT PANEL */
+  margin-left: 25px;
+  position: fixed;
+  z-index: 3;
+  width: 240px;
+  background-color: rgb(131, 128, 128);
+  height: 100vh;
+  min-height: 100%;
 }
-#logo{
-    padding: 15px;
+#logo {
+  padding: 15px;
 }
-#logoPNG{
-    border-radius: 10px;
-    height: 100%;
-    width: 100%;
+#logoPNG {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
 }
-.leftPanelMenu{
-    padding-top: 15px;
-    padding-bottom: 15px;
+.leftPanelMenu {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.leftPanelMenuOpt{
-    padding: 25px;
-    margin-top: 5px;
-    transition: color 1s,background-color 1s;
-    -moz-transition: color 1s,background-color 1s;
-    -o-transition: color 1s,background-color 1s;
+.leftPanelMenuOpt {
+  font-size: 40px;
+  padding: 10px;
+  margin-top: 5px;
+  transition: color 1s, background-color 1s;
+  -moz-transition: color 1s, background-color 1s;
+  -o-transition: color 1s, background-color 1s;
 }
-.leftPanelMenuOpt:hover{
-    background-color: rgb(44, 44, 33);
-    color: #ffffff;
-    cursor: pointer;
+.leftPanelMenuOpt:hover {
+  background-color: rgb(44, 44, 33);
+  color: #ffffff;
+  cursor: pointer;
 }
-.rightPanel{
-    margin-left: 265px;
-    width: 100%;
-    height: 100vh;
+.leftPanelSocials {
+  font-size: 24px;
 }
-.landingPageTitle{
-    font-size: 30px;
-    padding: 25px;
+.ics {
+  padding-top: 15px;
+  padding-left: 3px;
+  transition: color 0.5s;
 }
-.landingPageImgContainer{
-    padding: 25px;
+.ics:hover {
+  color: #f3f3f3;
+  cursor: pointer;
 }
-#landingPageImg{
-    border-radius: 10px;
+.rightPanel {
+  margin-left: 265px;
+  width: 100%;
+  height: 100vh;
 }
-.landingPageSocials{
-    font-size: 44px;
+.landingPageTitle {
+  font-size: 30px;
+  padding: 25px;
 }
-.ic{
-    padding-top: 45px;
-    padding-left: 5px;
-    transition: color 0.5s;
+.landingPageImgContainer {
+  padding: 25px;
 }
-.ic:hover{
-    color: #f3f3f3;
-    cursor: pointer;
+#landingPageImg {
+  border-radius: 10px;
 }
-.aboutPage{
-    display: none;
+.landingPageSocials {
+  font-size: 44px;
 }
-.aboutPageTitle{
-    font-size: 30px;
-    padding: 25px;
+.ic {
+  padding-top: 45px;
+  padding-left: 5px;
+  transition: color 0.5s;
 }
-.progressBars{
-    width: 450px;
-    height: auto;
-    padding: 25px;
+.ic:hover {
+  color: #f3f3f3;
+  cursor: pointer;
+}
+.aboutPage {
+  display: none;
+}
+.aboutPageTitle {
+  font-size: 30px;
+  padding: 25px;
+}
+.progressBars {
+  width: 450px;
+  height: auto;
+  padding: 25px;
 }
 /* TODO Animacje po kliknieciu storny */
-@keyframes progressBarOneAnim{
-    form{width: 0%;}
-    to{width: 75%;}
-}
-.progressBarOne{
-    width: 250px;
-    height: 43px;
-    border: 5px solid #121212;
-    border-radius: 5px;
-    margin-top: 25px;
-    background-color: rgb(169, 169, 169);
-}
-.progressBarOneInner{
-    background-color: #121212;
+@keyframes progressBarOneAnim {
+  form {
+    width: 0%;
+  }
+  to {
     width: 75%;
-    height: 43px;
-    animation-name: progressBarOneAnim;
-    animation-duration: 1s;
+  }
 }
-.progressBarTwo{
-    width: 250px;
-    height: 43px;
-    border: 5px solid #121212;
-    border-radius: 5px;
-    margin-top: 25px;
-    background-color: rgb(169, 169, 169);
+.progressBarOne {
+  width: 250px;
+  height: 43px;
+  border: 5px solid #121212;
+  border-radius: 5px;
+  margin-top: 25px;
+  background-color: rgb(169, 169, 169);
 }
-.progressBarTwoInner{
-    background-color: #121212;
-    width: 25%;
-    height: 43px;
+.progressBarOneInner {
+  background-color: #121212;
+  width: 75%;
+  height: 43px;
+  animation-name: progressBarOneAnim;
+  animation-duration: 1s;
 }
-.progressBarThree{
-    width: 250px;
-    height: 43px;
-    border: 5px solid #121212;
-    border-radius: 5px;
-    margin-top: 25px;
-    background-color: rgb(169, 169, 169);
+.progressBarTwo {
+  width: 250px;
+  height: 43px;
+  border: 5px solid #121212;
+  border-radius: 5px;
+  margin-top: 25px;
+  background-color: rgb(169, 169, 169);
 }
-.progressBarThreeInner{
-    background-color: #121212;
-    width: 100%;
-    height: 43px;
+.progressBarTwoInner {
+  background-color: #121212;
+  width: 25%;
+  height: 43px;
 }
-.workPage{
-    display: none;
+.progressBarThree {
+  width: 250px;
+  height: 43px;
+  border: 5px solid #121212;
+  border-radius: 5px;
+  margin-top: 25px;
+  background-color: rgb(169, 169, 169);
 }
-.workPageTitle{
-    font-size: 30px;
-    padding: 25px;
+.progressBarThreeInner {
+  background-color: #121212;
+  width: 100%;
+  height: 43px;
 }
-.galleryContainer{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1284px;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 56px;
-    /* margin-top: 10vh; */
+.workPage {
+  display: none;
 }
-.galleryItem{
-    /* width: 350px;
+.workPageTitle {
+  font-size: 30px;
+  padding: 25px;
+}
+#workPageGallery {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 824px;
+}
+#workPageGalleryImg {
+  width: 100%;
+  height: auto;
+}
+.galleryContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1284px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 56px;
+  /* margin-top: 10vh; */
+}
+.galleryItem {
+  /* width: 350px;
     height: 200px; */
-    font-size: inherit;
+  font-size: inherit;
 }
-.galleryItemImg{
-    /* max-width: 100%;
+.galleryItemImg {
+  /* max-width: 100%;
     height: auto; */
-    width: 350px;
-    height: 200px;
-    padding: 25px;
+  width: 350px;
+  height: 200px;
+  padding: 25px;
 }
-.contactPage{
-    display: none;
+.contactPage {
+  display: none;
 }

@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded',function(){
     function unfade(element) {
-        var op = 0.1;  // initial opacity
+        let op = 0.1;  // initial opacity
         element.style.display = 'block';
-        var timer = setInterval(function () {
+        let timer = setInterval(function () {
             if (op >= 1){
                 clearInterval(timer);
             }
@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded',function(){
         }, 10);
     }
     function fade(element) {
-        var op = 1;  // initial opacity
-        var timer = setInterval(function () {
+        let op = 1;  // initial opacity
+        let timer = setInterval(function () {
             if (op <= 0.1){
                 clearInterval(timer);
                 element.style.display = 'none';
@@ -35,17 +35,17 @@ document.addEventListener('DOMContentLoaded',function(){
 
     //Variables
     //Buttons
-    var homePageButton = document.getElementById('home');
-    var aboutPageButton = document.getElementById('about');
-    var workPageButton = document.getElementById('work');
-    var contactPageButton = document.getElementById('contact');
+    const homePageButton = document.getElementById('home');
+    const aboutPageButton = document.getElementById('about');
+    const workPageButton = document.getElementById('work');
+    const contactPageButton = document.getElementById('contact');
     //Pages
-    var landingPage = document.getElementsByClassName('landingPage')[0];
-    var aboutPage = document.getElementsByClassName('aboutPage')[0];
-    var workPage = document.getElementsByClassName('workPage')[0];
-    var contactPage = document.getElementsByClassName('contactPage')[0];
+    const landingPage = document.getElementsByClassName('landingPage')[0];
+    const aboutPage = document.getElementsByClassName('aboutPage')[0];
+    const workPage = document.getElementsByClassName('workPage')[0];
+    const contactPage = document.getElementsByClassName('contactPage')[0];
     //Page shown on screen
-    var activePage = landingPage;
+    let activePage = landingPage;
     //Handlers for menu buttons
     homePageButton.addEventListener('mousedown',function(){
         changePage(activePage,landingPage);
@@ -63,4 +63,27 @@ document.addEventListener('DOMContentLoaded',function(){
         changePage(activePage,contactPage);
         activePage = contactPage;
     },false);
+    //Gallery
+    const gallery = document.getElementById('workPageGallery');
+    const galleryImg = document.getElementById('workPageGalleryImg');
+    const galleryNavLeft = document.getElementById('workPageGalleryNavLeft');
+    const galleryNavRight = document.getElementById('workPageGalleryNavRight');
+    //Variables
+    let imgCount = 10
+    let imgCounter = 1;
+    //Gallery Navigation Handlers
+    // TODO Animations on change
+    galleryNavLeft.addEventListener('mousedown',function(){
+        imgCounter -= 1;
+        if(imgCounter < 1) imgCounter = imgCount;
+        galleryImg.src = '/img/img' + imgCounter + '.png';
+        console.log(imgCounter);
+    },false);
+    galleryNavRight.addEventListener('mousedown',function(){
+        imgCounter += 1;
+        if(imgCounter > imgCount) imgCounter = 1;
+        galleryImg.src = '/img/img' + imgCounter + '.png';
+        console.log(imgCounter);
+    },false);
+
 },false);
