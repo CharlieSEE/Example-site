@@ -102,13 +102,28 @@ body {
   height: auto;
   padding: 25px;
 }
-/* TODO Animacje po kliknieciu storny */
 @keyframes progressBarOneAnim {
-  form {
+  from {
     width: 0%;
   }
   to {
     width: 75%;
+  }
+}
+@keyframes progressBarTwoAnim {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 25%;
+  }
+}
+@keyframes progressBarThreeAnim {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
   }
 }
 .progressBarOne {
@@ -121,10 +136,11 @@ body {
 }
 .progressBarOneInner {
   background-color: #121212;
-  width: 75%;
+  width: 0%;
   height: 43px;
   animation-name: progressBarOneAnim;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 .progressBarTwo {
   width: 250px;
@@ -136,8 +152,12 @@ body {
 }
 .progressBarTwoInner {
   background-color: #121212;
-  width: 25%;
+  width: 0%;
   height: 43px;
+  animation-name: progressBarTwoAnim;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 .progressBarThree {
   width: 250px;
@@ -149,8 +169,12 @@ body {
 }
 .progressBarThreeInner {
   background-color: #121212;
-  width: 100%;
+  width: 0%;
   height: 43px;
+  animation-name: progressBarThreeAnim;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 .workPage {
   display: none;
@@ -169,6 +193,17 @@ body {
   width: 100%;
   height: auto;
 }
+/* Don't work
+ #workPageGalleryNavLeft,#workPageGalleryNavRight{
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+}
+#workPageGalleryNavRight{
+  right: 0;
+} */
 .galleryContainer {
   display: flex;
   align-content: center;
@@ -195,4 +230,7 @@ body {
 }
 .contactPage {
   display: none;
+}
+.contactFormContainer{
+  height: auto;
 }
