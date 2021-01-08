@@ -43,6 +43,8 @@ body {
   padding: 10px;
   margin-top: 5px;
   transition: color 1s, background-color 1s;
+  -webkit-transition: color 1s, background-color 1s;
+  -ms-transition: color 1s, background-color 1s;
   -moz-transition: color 1s, background-color 1s;
   -o-transition: color 1s, background-color 1s;
 }
@@ -186,6 +188,7 @@ body {
 #workPageGallery {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 7vh;
   width: 100%;
   max-width: 824px;
 }
@@ -193,17 +196,23 @@ body {
   width: 100%;
   height: auto;
 }
-/* Don't work
- #workPageGalleryNavLeft,#workPageGalleryNavRight{
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
+.workPageGalleryPreview {
+  max-width: 202.25px;
+  display: inline-block;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -ms-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s ;
+  transition: opacity 0.6s ;
 }
-#workPageGalleryNavRight{
-  right: 0;
-} */
+.workPageGalleryPreviewImg {
+  width: 100%;
+  height: auto;
+}
+.workPageGalleryPreview:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
 .galleryContainer {
   display: flex;
   align-content: center;
@@ -231,6 +240,6 @@ body {
 .contactPage {
   display: none;
 }
-.contactFormContainer{
+.contactFormContainer {
   height: auto;
 }

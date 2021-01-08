@@ -66,24 +66,13 @@ document.addEventListener('DOMContentLoaded',function(){
     //Gallery
     const gallery = document.getElementById('workPageGallery');
     const galleryImg = document.getElementById('workPageGalleryImg');
-    const galleryNavLeft = document.getElementById('workPageGalleryNavLeft');
-    const galleryNavRight = document.getElementById('workPageGalleryNavRight');
+    const galleryPreviewImgNode = document.getElementsByClassName('workPageGalleryPreviewImg');
     //Variables
-    let imgCount = 10
-    let imgCounter = 1;
-    //Gallery Navigation Handlers
-    // TODO Animations on change
-    galleryNavLeft.addEventListener('mousedown',function(){
-        imgCounter -= 1;
-        if(imgCounter < 1) imgCounter = imgCount;
-        galleryImg.src = '/img/img' + imgCounter + '.png';
-        console.log(imgCounter);
-    },false);
-    galleryNavRight.addEventListener('mousedown',function(){
-        imgCounter += 1;
-        if(imgCounter > imgCount) imgCounter = 1;
-        galleryImg.src = '/img/img' + imgCounter + '.png';
-        console.log(imgCounter);
-    },false);
+    let imgOrder = [];
+    //TODO Finish gallery img change
+    for (let i = 0; i < galleryPreviewImgNode.length+1; i++) {
+        imgOrder[i] = galleryPreviewImgNode[i];
+    }
+    
 
 },false);
