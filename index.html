@@ -20,10 +20,18 @@
           <img id="logoPNG" src="https://via.placeholder.com/256" alt="LOGO" />
         </div>
         <div class="leftPanelMenu">
-          <div class="leftPanelMenuOpt" id="home"><i class="fas fa-home"></i></div>
-          <div class="leftPanelMenuOpt" id="about"><i class="fas fa-briefcase"></i></div>
-          <div class="leftPanelMenuOpt" id="work"><i class="fas fa-images"></i></div>
-          <div class="leftPanelMenuOpt" id="contact"><i class="fas fa-address-card"></i></div>
+          <div class="leftPanelMenuOpt" id="home">
+            <i class="fas fa-home"></i>
+          </div>
+          <div class="leftPanelMenuOpt" id="about">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="leftPanelMenuOpt" id="work">
+            <i class="fas fa-images"></i>
+          </div>
+          <div class="leftPanelMenuOpt" id="contact">
+            <i class="fas fa-address-card"></i>
+          </div>
         </div>
         <!-- TODO Socials -->
         <div class="leftPanelSocials">
@@ -57,7 +65,12 @@
         <div class="aboutPage">
           <!-- TODO:Takie fajne paski pokazujące skilla -->
           <div class="aboutPageTitle">Few words about me:</div>
-          <div class="aboutPageArtc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus quisquam alias officiis hic! Facere tempore sit, minus sunt laborum voluptates quod illum vitae voluptatem fugiat fuga! Soluta illum dicta cupiditate?</div>
+          <div class="aboutPageArtc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            quisquam alias officiis hic! Facere tempore sit, minus sunt laborum
+            voluptates quod illum vitae voluptatem fugiat fuga! Soluta illum
+            dicta cupiditate?
+          </div>
           <div class="progressBars">
             <div class="progressBarOne">
               <div class="progressBarOneInner"></div>
@@ -73,12 +86,38 @@
         <div class="workPage">
           <!-- TODO:Photo Gallery -->
           <div class="workPageTitle">Some of my work</div>
+
+          <!-- Gallery 2  -->
           <div id="workPageGallery">
-            <img id="workPageGalleryImg" src="/img/img1.jpg" alt="zdjęcie">
-              <div class="workPageGalleryPreview"><img src="/img/img2.jpg" alt="zdjęcie" class="workPageGalleryPreviewImg"></div>
-              <div class="workPageGalleryPreview"><img src="/img/img3.jpg" alt="zdjęcie" class="workPageGalleryPreviewImg"></div>
-              <div class="workPageGalleryPreview"><img src="/img/img4.jpg" alt="zdjęcie" class="workPageGalleryPreviewImg"></div>
-              <div class="workPageGalleryPreview"><img src="/img/img5.jpg" alt="zdjęcie" class="workPageGalleryPreviewImg"></div>
+            <img id="workPageGalleryImg" src="/img/img1.jpg" alt="zdjęcie" />
+            <div class="workPageGalleryPreview">
+              <img
+                src="/img/img2.jpg"
+                alt="zdjęcie"
+                class="workPageGalleryPreviewImg"
+              />
+            </div>
+            <div class="workPageGalleryPreview">
+              <img
+                src="/img/img3.jpg"
+                alt="zdjęcie"
+                class="workPageGalleryPreviewImg"
+              />
+            </div>
+            <div class="workPageGalleryPreview">
+              <img
+                src="/img/img4.jpg"
+                alt="zdjęcie"
+                class="workPageGalleryPreviewImg"
+              />
+            </div>
+            <div class="workPageGalleryPreview">
+              <img
+                src="/img/img5.jpg"
+                alt="zdjęcie"
+                class="workPageGalleryPreviewImg"
+              />
+            </div>
           </div>
           <!--ALT straight gallery <div class="galleryContainer">
             <div class="galleryItem">
@@ -114,8 +153,33 @@
         </div>
         <div class="contactPage">
           <!-- TODO:Contact form -->
+          <div class="contactPageCredits">
+            <div class="contactMeans">
+              <div class="contactMeansTitle">Contact Me</div>
+              <div class="contactMeansEmail">
+                <i class="contactMeansIcons fas fa-envelope"></i>
+                <div class="contactMeansText">emailmail@mail.com</div>
+              </div>
+              <div class="contactMeansPhone">
+                <i class="contactMeansIcons fas fa-phone-alt"></i>
+                <div class="contactMeansText">+48 765 777 222</div>
+              </div>
+              <div class="contactMeansAdress">
+                <i class="contactMeansIcons fas fa-map-marked-alt"></i>
+                <div class="contactMeansText">Warszawa</div>
+              </div>
+            </div>
+            <div class="contactPagePhoto">
+              <img
+                class="contactPagePhotoSrc"
+                src="./img//img1.jpg"
+                alt="Sample Photo"
+              />
+            </div>
+          </div>
           <div class="contactFormContainer">
-            <form id="contactForm" action="" method="post">
+            <div class="contactFormTitle">Or send a short meassage</div>
+            <form id="contactForm" action="#" method="post">
               <div class="contactFromEmailTitle">E-mail:</div>
               <input
                 type="email"
@@ -124,10 +188,20 @@
                 placeholder="Email"
               />
               <div class="contactFormNameTitle">Name:</div>
-              <input type="text" name="name" id="contactFormName" placeholder="Your name" />
-              <div class="contactFormMsgTitle">Meassage</div>
-              <input type="text" name="msg" id="contactFormMsg" placeholder="Type in your meassage"/>
-              <input type="submit" value="Prześlij">
+              <input
+                type="text"
+                name="name"
+                id="contactFormName"
+                placeholder="Your name"
+              />
+              <div class="contactFormMsgTitle">Meassage:</div>
+              <input
+                type="text"
+                name="msg"
+                id="contactFormMsg"
+                placeholder="Type in your meassage"
+              />
+              <input id="contactFormSubmit" type="submit" value="Send" />
             </form>
           </div>
         </div>

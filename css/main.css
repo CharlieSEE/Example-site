@@ -181,6 +181,7 @@ body {
 .workPage {
   display: none;
 }
+
 .workPageTitle {
   font-size: 30px;
   padding: 25px;
@@ -202,8 +203,8 @@ body {
   -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
   -ms-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s ;
-  transition: opacity 0.6s ;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
 }
 .workPageGalleryPreviewImg {
   width: 100%;
@@ -241,5 +242,120 @@ body {
   display: none;
 }
 .contactFormContainer {
+  justify-content: center;
   height: auto;
+  background-color: #616161;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+.contactFormTitle {
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  color: #ffffff;
+}
+.contactFromEmailTitle,
+.contactFormNameTitle,
+.contactFormMsgTitle {
+  font-size: 20px;
+  padding: 5px;
+  color: #ffffff;
+}
+#contactFormEmail,
+#contactFormName,
+#contactFormMsg {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: background-color 0.5s;
+  font-size: 14px;
+}
+#contactFormEmail:focus,
+#contactFormName:focus,
+#contactFormMsg:focus {
+  background-color: #c5c3c3;
+  border: 1px solid #121212;
+  outline: none;
+}
+#contactFormEmail:hover,
+#contactFormName:hover,
+#contactFormMsg:hover {
+  background-color: #c5c3c3;
+  border: 1px solid #121212;
+}
+#contactFormSubmit {
+  font-size: 14px;
+  width: 20%;
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+#contactFormSubmit:hover {
+  background-color: #1d1c1c;
+}
+#contactFormSubmit:focus {
+  outline: none;
+}
+.contactMeans {
+  background-color: #616161;
+  padding: 34px;
+  margin: 45px;
+  width: 40%;
+  border-radius: 10px;
+}
+.contactMeansTitle {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 28px;
+  text-align: left;
+}
+.contactMeansEmail,
+.contactMeansPhone,
+.contactMeansAdress {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+.contactMeansIcons {
+  /* Może jakieś animacje */
+  font-size: 72px;
+  margin-right: 5px;
+  padding: 10px;
+}
+.contactMeansText {
+  padding: 35px;
+  color: #ffffff;
+  font-size: 24px;
+}
+.contactPageCredits {
+  display: flex;
+  flex-direction: row;
+}
+.contactPagePhoto {
+  overflow: hidden;
+  width: 50%;
+  height: auto;
+  margin: 42px;
+  border-radius: 15px;
+}
+.contactPagePhotoSrc {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(50%);
+}
+.contactPagePhotoSrc:hover {
+  filter: brightness(100%);
+  transform: scale(1.3);
 }

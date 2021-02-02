@@ -73,6 +73,10 @@ document.addEventListener('DOMContentLoaded',function(){
     for (let i = 0; i < galleryPreviewImgNode.length+1; i++) {
         imgOrder[i] = galleryPreviewImgNode[i];
     }
-    
+    //Form handle
+    document.getElementById("contactForm").addEventListener("submit",(e)=>{
+        //TODO Handling form
+        e.preventDefault();
+    },false);
 
 },false);
