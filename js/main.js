@@ -81,31 +81,6 @@ document.addEventListener(
       },
       false
     );
-    //Gallery
-    const gallery = document.getElementById("workPageGallery");
-    const galleryImg = document.getElementById("workPageGalleryImg");
-    const galleryPreviewImgNode = document.getElementsByClassName(
-      "workPageGalleryPreviewImg"
-    );
-    //Variables
-    function myFunction(imgs) {
-      var expandImg = document.getElementById("expandedImg");
-      var imgText = document.getElementById("imgtext");
-      expandImg.src = imgs.src;
-      imgText.innerHTML = imgs.alt;
-      expandImg.parentElement.style.display = "block";
-    }
-    for (let i = 0; i < galleryPreviewImgNode.length; i++) {
-      galleryPreviewImgNode[i].addEventListener("click", function (e) {
-        myFunction(e);
-      }, false);
-    }
-    let previewImg = [];
-    //TODO Finish gallery img change
-    for (let i = 0; i < galleryPreviewImgNode.length; i++) {
-      previewImg[i] = "./img/img" + (i + 2) + ".jpg";
-      console.log(previewImg[i]);
-    }
     //Form handle
     document.getElementById("contactForm").addEventListener(
       "submit",
