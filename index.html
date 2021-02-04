@@ -21,6 +21,9 @@
   </head>
   <body>
     <div id="container">
+      <div id="leftPanelMobileIcon">
+        <i class="fas fa-bars"></i>
+      </div>
       <div class="leftPanel">
         <div id="logo">
           <img id="logoPNG" src="https://via.placeholder.com/256" alt="LOGO" />
@@ -70,18 +73,7 @@
         </div>
         <div class="aboutPage">
           <div class="aboutPageTitle">Few words about me:</div>
-          <div class="aboutPageTopRow">
-            <div class="progressBars">
-              <div class="progressBarOne">
-                <div class="progressBarOneInner">HTML</div>
-              </div>
-              <div class="progressBarTwo">
-                <div class="progressBarTwoInner">CSS</div>
-              </div>
-              <div class="progressBarThree">
-                <div class="progressBarThreeInner">JavaScript</div>
-              </div>
-            </div>
+          <div class="aboutPageContainer">
             <div class="aboutPageArtc">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
               quisquam alias officiis hic! Facere tempore sit, minus sunt
@@ -95,14 +87,32 @@
               laborum voluptates quod illum vitae voluptatem fugiat fuga! Soluta
               illum dicta cupiditate?
             </div>
-          </div>
-          <div class="aboutPageBottomRow">
+            <!-- <div class="aboutPageTopRow"> -->
+            <div class="progressBars">
+              <div class="progressBarOne">
+                <div class="progressBarOneInner">HTML</div>
+              </div>
+              <div class="progressBarTwo">
+                <div class="progressBarTwoInner">CSS</div>
+              </div>
+              <div class="progressBarThree">
+                <div class="progressBarThreeInner">JavaScript</div>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="aboutPageBottomRow"> -->
             <div class="aboutPageBottomRowImg">
-              <img
-                class="aboutPageBottomRowImgSrc"
-                src="./img/img1.jpg"
-                alt=""
-              />
+              <a
+                href="https://www.pk.edu.pl/index.php?lang=pl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="aboutPageBottomRowImgSrc"
+                  src="./img/PK.jpg"
+                  alt="https://www.pk.edu.pl/index.php?lang=pl"
+                />
+              </a>
             </div>
             <div class="aboutPageBottomRowImg">
               <img
@@ -111,71 +121,56 @@
                 alt=""
               />
             </div>
+            <!-- </div> -->
           </div>
         </div>
         <div class="workPage">
-          <!-- TODO:Photo Gallery -->
           <div class="workPageTitle">Some of my work</div>
-          <!-- Gallery 2  -->
-          <!-- <div id="workPageGallery">
-            <img id="workPageGalleryImg" src="/img/img1.jpg" alt="zdjęcie" />
-            <div class="workPageGalleryPreview">
-              <img
-                src="/img/img2.jpg"
-                alt="zdjęcie"
-                class="workPageGalleryPreviewImg"
-              />
-            </div>
-            <div class="workPageGalleryPreview">
-              <img
-                src="/img/img3.jpg"
-                alt="zdjęcie"
-                class="workPageGalleryPreviewImg"
-              />
-            </div>
-            <div class="workPageGalleryPreview">
-              <img
-                src="/img/img4.jpg"
-                alt="zdjęcie"
-                class="workPageGalleryPreviewImg"
-              />
-            </div>
-            <div class="workPageGalleryPreview">
-              <img
-                src="/img/img5.jpg"
-                alt="zdjęcie"
-                class="workPageGalleryPreviewImg"
-              />
-            </div>
-          </div> -->
-          <!-- ALT straight gallery  -->
           <div class="galleryContainer">
             <div class="galleryItem">
-              <img src="img/img1.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img1.jpg" target="_blank">
+                <img src="img/img1.jpg" alt="zdjęcie" class="galleryItemImg" />
+              </a>
             </div>
             <div class="galleryItem">
-              <img src="img/img2.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img2.jpg" target="_blank">
+                <img src="img/img2.jpg" alt="zdjęcie" class="galleryItemImg" />
+              </a>
             </div>
             <div class="galleryItem">
-              <img src="img/img3.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img3.jpg" target="_blank">
+                <img src="img/img3.jpg" alt="zdjęcie" class="galleryItemImg" />
+              </a>
             </div>
             <div class="galleryItem">
-              <img src="img/img4.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img4.jpg" target="_blank">
+                <img src="img/img4.jpg" alt="zdjęcie" class="galleryItemImg" />
+              </a>
             </div>
             <div class="galleryItem">
-              <img src="img/img5.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img5.jpg" target="_blank">
+                <img src="img/img5.jpg" alt="zdjęcie" class="galleryItemImg" />
+              </a>
             </div>
             <div class="galleryItem">
-              <img src="img/img6.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img6.jpg" target="_blank">
+                <img src="img/img6.jpg" alt="zdjęcie" class="galleryItemImg" />
+              </a>
             </div>
             <div class="galleryItem">
-              <img src="img/img7.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img7.jpg" target="_blank">
+                <img src="img/img7.jpg" alt="zdjęcie" class="galleryItemImg" />
+              </a>
             </div>
             <div class="galleryItem">
-              <img src="img/img8.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img8.jpg" target="_blank">
+                <img src="img/img8.jpg" alt="zdjęcie" class="galleryItemImg" />
+              </a>
             </div>
             <div class="galleryItem">
-              <img src="img/img9.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img9.jpg" target="_blank">
+                <img src="img/img9.jpg" alt="zdjęcie" class="galleryItemImg" />
+              </a>
             </div>
           </div>
         </div>

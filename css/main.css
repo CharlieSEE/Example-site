@@ -16,6 +16,9 @@ body {
   display: flex;
   height: 100vh;
 }
+#leftPanelMobileIcon{
+  display: none;
+}
 .leftPanel {
   /* OPT FIXED LEFT PANEL */
   margin-left: 25px;
@@ -99,19 +102,25 @@ body {
   font-size: 30px;
   padding: 25px;
 }
+.aboutPageContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  /* grid-template-rows: repeat(2, 50%); */
+}
 .aboutPageTopRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  /* display: flex;
+  flex-direction: row; 
+  justify-content: center; */
 }
 .aboutPageArtc {
   text-align: justify;
   padding: 50px;
+  font-size: 18px;
 }
 .progressBars {
-  width: 450px;
+  width: auto;
   height: auto;
-  padding: 25px;
+  padding-left: 50px;
   /* margin-left: 66px; */
 }
 @keyframes progressBarOneAnim {
@@ -147,7 +156,7 @@ body {
 .progressBarOne {
   overflow: hidden;
   color: #000000;
-  width: 450px;
+  width: 80%;
   height: 43px;
   border: 5px solid #121212;
   border-radius: 5px;
@@ -169,7 +178,7 @@ body {
 .progressBarTwo {
   overflow: hidden;
   color: #000000;
-  width: 450px;
+  width: 80%;
   height: 43px;
   border: 5px solid #121212;
   border-radius: 5px;
@@ -191,7 +200,7 @@ body {
 }
 .progressBarThree {
   overflow: hidden;
-  width: 450px;
+  width: 80%;
   height: 43px;
   border: 5px solid #121212;
   border-radius: 5px;
@@ -211,22 +220,30 @@ body {
   animation-fill-mode: forwards;
 }
 .aboutPageBottomRow {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; 
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 .aboutPageBottomRowImg {
   overflow: hidden;
   text-align: center;
   padding: 45px;
-  width: 35vw;
+  width: 38vw;
 }
 .aboutPageBottomRowImgSrc {
   width: 100%;
   height: auto;
+  border-radius: 15px;
+  transition: transform 1.5s, filter 1s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(100%);
+}
+.aboutPageBottomRowImgSrc:hover {
+  filter: brightness(50%);
+  transform: scale(0.9);
 }
 .workPage {
   display: none;
@@ -279,6 +296,7 @@ body {
   background-color: #616161;
   margin-left: 45px;
   margin-right: 45px;
+  border-radius: 15px;
 }
 .contactFormTitle {
   text-align: center;
@@ -390,4 +408,47 @@ body {
 .contactPagePhotoSrc:hover {
   filter: brightness(50%);
   transform: scale(1.3);
+}
+/* Laptops */
+@media screen and (max-width: 1445px) {
+  .galleryContainer {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+/* Tablets */
+@media screen and (max-width: 780px) {
+  .rightPanel {
+    margin: auto;
+  }
+  #leftPanelMobileIcon{
+    font-size: 50px;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    top: 25px;
+    left: 25px;
+  }
+  .leftPanel {
+    margin: 0;
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  .galleryContainer {
+    grid-template-columns: auto;
+  }
+  .galleryItem {
+    width: 80vw;
+    height: auto;
+  }
+  .galleryItemImg {
+    width: 100%;
+    height: auto;
+  }
 }

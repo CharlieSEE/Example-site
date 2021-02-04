@@ -90,6 +90,21 @@ document.addEventListener(
       },
       false
     );
+    //Close Button
+    let buttonClosed = true;
+    function openNav() {
+      document.getElementsByClassName("leftPanel")[0].style.width = "100%";
+    }    
+    function closeNav() {
+      document.getElementsByClassName("leftPanel")[0].style.width = "0";
+    }
+    const OpCdButton = document.getElementById('leftPanelMobileIcon');
+    OpCdButton.addEventListener('click',()=>{
+      buttonClosed ? openNav():closeNav();
+      buttonClosed = !buttonClosed;
+      console.log(buttonClosed);
+      // openNav();
+    },false);
   },
   false
 );
