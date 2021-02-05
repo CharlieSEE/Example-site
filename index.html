@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Photography cameras" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- UnComment on build -->
+    <!-- <link
+      rel="preload"
+      href="./css/main.mini.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./css/main.mini.css" /></noscript> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
@@ -15,7 +29,6 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
-    <!-- <script src="/js/all.min.js"></script> -->
     <link rel="stylesheet" href="css/main.css" />
     <title>Captain Jackass</title>
   </head>
@@ -57,11 +70,7 @@
             “Impossible is just an opinion.” – Paulo Coelho
           </div>
           <div class="landingPageImgContainer">
-            <img
-              id="landingPageImg"
-              src="https://via.placeholder.com/650"
-              alt="img"
-            />
+            <img id="landingPageImg" src="./img/img1.webp" alt="img" />
           </div>
           <div class="landingPageSocials">
             <i class="ic fab fa-facebook"></i>
@@ -117,7 +126,7 @@
             <div class="aboutPageBottomRowImg">
               <img
                 class="aboutPageBottomRowImgSrc"
-                src="./img/img2.jpg"
+                src="./img/img2.webp"
                 alt=""
               />
             </div>
@@ -133,50 +142,50 @@
               </a>
             </div>
             <div class="galleryItem">
-              <a href="./img/img2.jpg" target="_blank">
-                <img src="img/img2.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img2.webp" target="_blank">
+                <img src="img/img2.webp" alt="zdjęcie" class="galleryItemImg" />
               </a>
             </div>
             <div class="galleryItem">
-              <a href="./img/img3.jpg" target="_blank">
-                <img src="img/img3.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img3.webp" target="_blank">
+                <img src="img/img3.webp" alt="zdjęcie" class="galleryItemImg" />
               </a>
             </div>
             <div class="galleryItem">
-              <a href="./img/img4.jpg" target="_blank">
-                <img src="img/img4.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img4.webp" target="_blank">
+                <img src="img/img4.webp" alt="zdjęcie" class="galleryItemImg" />
               </a>
             </div>
             <div class="galleryItem">
-              <a href="./img/img5.jpg" target="_blank">
-                <img src="img/img5.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img5.webp" target="_blank">
+                <img src="img/img5.webp" alt="zdjęcie" class="galleryItemImg" />
               </a>
             </div>
             <div class="galleryItem">
-              <a href="./img/img6.jpg" target="_blank">
-                <img src="img/img6.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img6.webp" target="_blank">
+                <img src="img/img6.webp" alt="zdjęcie" class="galleryItemImg" />
               </a>
             </div>
             <div class="galleryItem">
-              <a href="./img/img7.jpg" target="_blank">
-                <img src="img/img7.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img7.webp" target="_blank">
+                <img src="img/img7.webp" alt="zdjęcie" class="galleryItemImg" />
               </a>
             </div>
             <div class="galleryItem">
-              <a href="./img/img8.jpg" target="_blank">
-                <img src="img/img8.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img8.webp" target="_blank">
+                <img src="img/img8.webp" alt="zdjęcie" class="galleryItemImg" />
               </a>
             </div>
             <div class="galleryItem">
-              <a href="./img/img9.jpg" target="_blank">
-                <img src="img/img9.jpg" alt="zdjęcie" class="galleryItemImg" />
+              <a href="./img/img9.webp" target="_blank">
+                <img src="img/img9.webp" alt="zdjęcie" class="galleryItemImg" />
               </a>
             </div>
           </div>
         </div>
         <div class="contactPage">
-          <!-- TODO:Contact form -->
-          <div class="contactPageCredits">
+          <div class="contactPageContainer">
+            <!-- <div class="contactPageCredits"> -->
             <div class="contactMeans">
               <div class="contactMeansTitle">Contact Me</div>
               <div class="contactMeansEmail">
@@ -195,37 +204,38 @@
             <div class="contactPagePhoto">
               <img
                 class="contactPagePhotoSrc"
-                src="./img//img1.jpg"
+                src="./img//img1.webp"
                 alt="Sample Photo"
               />
             </div>
-          </div>
-          <div class="contactFormContainer">
-            <div class="contactFormTitle">Or send a short meassage</div>
-            <form id="contactForm" action="#" method="post">
-              <div class="contactFromEmailTitle">E-mail:</div>
-              <input
-                type="email"
-                name="email"
-                id="contactFormEmail"
-                placeholder="Email"
-              />
-              <div class="contactFormNameTitle">Name:</div>
-              <input
-                type="text"
-                name="name"
-                id="contactFormName"
-                placeholder="Your name"
-              />
-              <div class="contactFormMsgTitle">Meassage:</div>
-              <input
-                type="text"
-                name="msg"
-                id="contactFormMsg"
-                placeholder="Type in your meassage"
-              />
-              <input id="contactFormSubmit" type="submit" value="Send" />
-            </form>
+            <!-- </div> -->
+            <div class="contactFormContainer">
+              <div class="contactFormTitle">Or send a short meassage</div>
+              <form id="contactForm" action="#" method="post">
+                <div class="contactFromEmailTitle">E-mail:</div>
+                <input
+                  type="email"
+                  name="email"
+                  id="contactFormEmail"
+                  placeholder="Email"
+                />
+                <div class="contactFormNameTitle">Name:</div>
+                <input
+                  type="text"
+                  name="name"
+                  id="contactFormName"
+                  placeholder="Your name"
+                />
+                <div class="contactFormMsgTitle">Meassage:</div>
+                <input
+                  type="text"
+                  name="msg"
+                  id="contactFormMsg"
+                  placeholder="Type in your meassage"
+                />
+                <input id="contactFormSubmit" type="submit" value="Send" />
+              </form>
+            </div>
           </div>
         </div>
       </div>

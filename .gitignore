@@ -1,1 +1,15 @@
 .vscode/launch.json
+node_modules
+package-lock.json
+package.json
+css/main.mini.css
+img/img1.webp
+img/img2.webp
+img/img3.webp
+img/img4.webp
+img/img5.webp
+img/img6.webp
+img/img7.webp
+img/img8.webp
+img/img9.webp
+js/main.mini.js

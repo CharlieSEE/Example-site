@@ -53,6 +53,10 @@ document.addEventListener(
       "mousedown",
       function () {
         changePage(activePage, landingPage);
+        if (document.body.clientWidth < 931) {
+          buttonClosed ? openNav() : closeNav();
+          buttonClosed = !buttonClosed;
+        }
         activePage = landingPage;
       },
       false
@@ -61,6 +65,10 @@ document.addEventListener(
       "mousedown",
       function () {
         changePage(activePage, aboutPage);
+        if (document.body.clientWidth < 931) {
+          buttonClosed ? openNav() : closeNav();
+          buttonClosed = !buttonClosed;
+        }
         activePage = aboutPage;
       },
       false
@@ -69,6 +77,10 @@ document.addEventListener(
       "mousedown",
       function () {
         changePage(activePage, workPage);
+        if (document.body.clientWidth < 931) {
+          buttonClosed ? openNav() : closeNav();
+          buttonClosed = !buttonClosed;
+        }
         activePage = workPage;
       },
       false
@@ -77,6 +89,10 @@ document.addEventListener(
       "mousedown",
       function () {
         changePage(activePage, contactPage);
+        if (document.body.clientWidth < 931) {
+          buttonClosed ? openNav() : closeNav();
+          buttonClosed = !buttonClosed;
+        }
         activePage = contactPage;
       },
       false
@@ -94,17 +110,21 @@ document.addEventListener(
     let buttonClosed = true;
     function openNav() {
       document.getElementsByClassName("leftPanel")[0].style.width = "100%";
-    }    
+    }
     function closeNav() {
       document.getElementsByClassName("leftPanel")[0].style.width = "0";
     }
-    const OpCdButton = document.getElementById('leftPanelMobileIcon');
-    OpCdButton.addEventListener('click',()=>{
-      buttonClosed ? openNav():closeNav();
-      buttonClosed = !buttonClosed;
-      console.log(buttonClosed);
-      // openNav();
-    },false);
+    const OpCdButton = document.getElementById("leftPanelMobileIcon");
+    OpCdButton.addEventListener(
+      "click",
+      () => {
+        buttonClosed ? openNav() : closeNav();
+        buttonClosed = !buttonClosed;
+        console.log(buttonClosed);
+        // openNav();
+      },
+      false
+    );
   },
   false
 );

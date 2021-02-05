@@ -16,7 +16,7 @@ body {
   display: flex;
   height: 100vh;
 }
-#leftPanelMobileIcon{
+#leftPanelMobileIcon {
   display: none;
 }
 .leftPanel {
@@ -79,9 +79,13 @@ body {
 }
 .landingPageImgContainer {
   padding: 25px;
+  /* width: 640px;
+  height: 480px; */
 }
 #landingPageImg {
   border-radius: 10px;
+  width: 1140px;
+  height: 680px;
 }
 .landingPageSocials {
   font-size: 44px;
@@ -290,7 +294,13 @@ body {
 .contactPage {
   display: none;
 }
+.contactPageContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
 .contactFormContainer {
+  grid-column: 1/3;
+  grid-row: 2/3;
   justify-content: center;
   height: auto;
   background-color: #616161;
@@ -356,10 +366,12 @@ body {
   outline: none;
 }
 .contactMeans {
+  grid-column: 1/2;
+  grid-row: 1/2;
   background-color: #616161;
   padding: 34px;
   margin: 45px;
-  width: 40%;
+  /* width: 80%; */
   border-radius: 10px;
 }
 .contactMeansTitle {
@@ -389,17 +401,21 @@ body {
 .contactPageCredits {
   display: flex;
   flex-direction: row;
+  grid-column: 1/3;
 }
 .contactPagePhoto {
+  grid-column: 2/3;
+  grid-row: auto;
   overflow: hidden;
-  width: 50%;
-  height: auto;
-  margin: 42px;
+  width: 90%;
+  height: 410px;
+  margin: 45px;
+  margin-left: 0;
   border-radius: 15px;
 }
 .contactPagePhotoSrc {
-  width: 100%;
-  height: auto;
+  /* width: 34vw; */
+  height: 410px;
   border-radius: 15px;
   transition: transform 1.5s, filter 1s ease-in-out;
   transform-origin: center center;
@@ -410,35 +426,99 @@ body {
   transform: scale(1.3);
 }
 /* Laptops */
-@media screen and (max-width: 1445px) {
+@media screen and (max-width: 1537px) and (min-width: 932px) {
+  .leftPanel{
+    margin-left: 0;
+  }
+  .rightPanel{
+    margin-left: 240px;
+  }
+  .aboutPageContainer {
+    grid-template-columns: auto;
+  }
+  #landingPageImg{
+    width: 954px;
+  }
+  .progressBars {
+    width: 95%;
+  }
+  .progressBarOne,
+  .progressBarTwo,
+  .progressBarThree {
+    width: 90%;
+  }
   .galleryContainer {
     grid-template-columns: repeat(2, 50%);
   }
+  .aboutPageBottomRowImg {
+    width: 90%;
+  }
+  .aboutPageBottomRowImgSrc {
+    width: 100%;
+    height: auto;
+  }
 }
 /* Tablets */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 931px) {
   .rightPanel {
     margin: auto;
   }
-  #leftPanelMobileIcon{
+  #leftPanelMobileIcon {
     font-size: 50px;
     display: block;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: 25px;
     left: 25px;
   }
   .leftPanel {
     margin: 0;
-    height: 100%; 
-    width: 0; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
     left: 0;
-    overflow-x: hidden; 
-    padding-top: 60px; 
-    transition: 0.5s; 
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    background-color: #7c7c7c;
+  }
+  .leftPanelMenuOpt{
+    font-size: 90px;
+  }
+  .leftPanelSocials{
+    font-size: 74px;
+    padding: 5vh;
+  }
+  #logoPNG {
+    /* width: 10vw; */
+    max-width: 20%;
+  }
+  .landingPageImgContainer{
+    /* width: 80%;
+    height: 64vh; */
+  }
+  #landingPageImg{
+    width: 100%;
+    height: auto;
+  }
+  .progressBars {
+    padding-left: 10px;
+  }
+  .aboutPageContainer {
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto;
+  }
+  .progressBars {
+    width: 80%;
+  }
+  .aboutPageBottomRowImg {
+    width: 80%;
   }
   .galleryContainer {
     grid-template-columns: auto;
@@ -450,5 +530,26 @@ body {
   .galleryItemImg {
     width: 100%;
     height: auto;
+  }
+  .contactPageContainer {
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .contactMeans {
+    grid-row: 1/2;
+    width: auto;
+  }
+  .contactPagePhoto {
+    width: 90%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .contactPagePhotoSrc {
+    width: 100%;
+    height: auto;
+  }
+  .contactFormContainer {
+    grid-row: 3/4;
   }
 }
