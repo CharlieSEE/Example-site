@@ -114,14 +114,23 @@ document.addEventListener(
     function closeNav() {
       document.getElementsByClassName("leftPanel")[0].style.width = "0";
     }
-    const OpCdButton = document.getElementById("leftPanelMobileIcon");
-    OpCdButton.addEventListener(
+    const OpButton = document.getElementById("leftPanelMobileIcon");
+    OpButton.addEventListener(
       "click",
       () => {
         buttonClosed ? openNav() : closeNav();
         buttonClosed = !buttonClosed;
         console.log(buttonClosed);
         // openNav();
+      },
+      false
+    );
+    const CdButton = document.getElementById("leftPanelCloseIcon");
+    CdButton.addEventListener(
+      "click",
+      (e) => {
+        buttonClosed ? openNav() : closeNav();
+        buttonClosed = !buttonClosed;
       },
       false
     );
