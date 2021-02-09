@@ -5,13 +5,10 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(169, 169, 169);
+  /* background-color: rgb(169, 169, 169); */
+  background-color: #e2e0e5;
   color: #000000;
 }
-/* img{
-    width: 100%;
-    height: auto;
-} */
 #container {
   display: flex;
   height: 100vh;
@@ -20,12 +17,12 @@ body {
   display: none;
 }
 .leftPanel {
-  /* OPT FIXED LEFT PANEL */
   margin-left: 25px;
   position: fixed;
   z-index: 3;
   width: 240px;
-  background-color: rgb(131, 128, 128);
+  /* background-color: rgb(131, 128, 128); */
+  background-color: #a6a4a8;
   height: 100vh;
   min-height: 100%;
 }
@@ -55,7 +52,8 @@ body {
   -o-transition: color 1s, background-color 1s;
 }
 .leftPanelMenuOpt:hover {
-  background-color: rgb(44, 44, 33);
+  /* background-color: rgb(44, 44, 33); */
+  background-color: #838186;
   color: #ffffff;
   cursor: pointer;
 }
@@ -65,10 +63,11 @@ body {
 .ics {
   padding-top: 15px;
   padding-left: 3px;
-  transition: color 0.5s;
+  transition: color 0.5s, transform 0.5s;
 }
 .ics:hover {
-  color: #f3f3f3;
+  color: #e2e2e2;
+  transform: scale(0.9);
   cursor: pointer;
 }
 .rightPanel {
@@ -82,13 +81,11 @@ body {
 }
 .landingPageImgContainer {
   padding: 25px;
-  /* width: 640px;
-  height: 480px; */
 }
 #landingPageImg {
   border-radius: 10px;
   width: 1140px;
-  height: 680px;
+  height: 641px;
 }
 .landingPageSocials {
   font-size: 44px;
@@ -96,10 +93,11 @@ body {
 .ic {
   padding-top: 45px;
   padding-left: 5px;
-  transition: color 0.5s;
+  transition: color 0.5s, transform 0.5s;
 }
 .ic:hover {
-  color: #f3f3f3;
+  color: rgba(71, 71, 71, 0.602);
+  transform: scale(0.9);
   cursor: pointer;
 }
 .aboutPage {
@@ -112,7 +110,6 @@ body {
 .aboutPageContainer {
   display: grid;
   grid-template-columns: repeat(2, 49%);
-  /* grid-template-rows: repeat(2, 50%); */
 }
 .aboutPageArtc {
   text-align: justify;
@@ -162,13 +159,14 @@ body {
   color: #000000;
   width: auto;
   height: 43px;
-  border: 5px solid #121212;
+  border: 5px solid #242424;
   border-radius: 5px;
   margin-top: 25px;
-  background-color: rgb(169, 169, 169);
+  /* background-color: rgb(169, 169, 169); */
+  background-color: #e2e0e5;
 }
 .progressBarOneInner {
-  background-color: #121212;
+  background-color: #242424;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,18 +176,8 @@ body {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-/* .progressBarTwo {
-  overflow: hidden;
-  color: #000000;
-  width: 80%;
-  height: 43px;
-  border: 5px solid #121212;
-  border-radius: 5px;
-  margin-top: 25px;
-  background-color: rgb(169, 169, 169);
-} */
 .progressBarTwoInner {
-  background-color: #121212;
+  background-color: #242424;
   width: 0%;
   display: flex;
   justify-content: center;
@@ -200,17 +188,8 @@ body {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-/* .progressBarThree {
-  overflow: hidden;
-  width: 80%;
-  height: 43px;
-  border: 5px solid #121212;
-  border-radius: 5px;
-  margin-top: 25px;
-  background-color: rgb(169, 169, 169);
-} */
 .progressBarThreeInner {
-  background-color: #121212;
+  background-color: #242424;
   width: 0%;
   display: flex;
   justify-content: center;
@@ -230,7 +209,6 @@ body {
 .aboutPageBottomRowImgSrc {
   width: 100%;
   height: auto;
-  /* border-radius: 15px; */
   transition: transform 1.5s, filter 1s ease-in-out;
   transform-origin: center center;
   filter: brightness(100%);
@@ -262,8 +240,6 @@ body {
   padding: 25px;
 }
 .galleryItemImg {
-  /* max-width: 100%;
-    height: auto; */
   border-radius: 15px;
   width: 450px;
   height: 300px;
@@ -287,7 +263,8 @@ body {
   grid-row: 2/3;
   justify-content: center;
   height: auto;
-  background-color: #616161;
+  /* background-color: #616161; */
+  background-color: #838186;
   margin-left: 45px;
   margin-right: 45px;
   border-radius: 15px;
@@ -334,7 +311,8 @@ body {
 #contactFormSubmit {
   font-size: 14px;
   width: 20%;
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-color: #242424;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -344,7 +322,7 @@ body {
   transition: background-color 0.5s;
 }
 #contactFormSubmit:hover {
-  background-color: #1d1c1c;
+  background-color: #3f3d3d;
 }
 #contactFormSubmit:focus {
   outline: none;
@@ -352,10 +330,10 @@ body {
 .contactMeans {
   grid-column: 1/2;
   grid-row: 1/2;
-  background-color: #616161;
+  /* background-color: #616161; */
+  background-color: #838186;
   padding: 34px;
   margin: 45px;
-  /* width: 80%; */
   border-radius: 10px;
 }
 .contactMeansTitle {
@@ -398,7 +376,6 @@ body {
   border-radius: 15px;
 }
 .contactPagePhotoSrc {
-  /* width: 34vw; */
   height: 510px;
   border-radius: 15px;
   transition: transform 1.5s, filter 1s ease-in-out;
@@ -449,7 +426,7 @@ body {
 @media screen and (max-width: 931px) {
   .rightPanel {
     margin: auto;
-    padding-top: 60px;
+    padding-top: 70px;
   }
   #leftPanelMobileIcon {
     font-size: 50px;
