@@ -40,7 +40,6 @@ document.addEventListener(
     const aboutPageButton = document.getElementById("about");
     const workPageButton = document.getElementById("work");
     const contactPageButton = document.getElementById("contact");
-
     //Pages
     const landingPage = document.getElementsByClassName("landingPage")[0];
     const aboutPage = document.getElementsByClassName("aboutPage")[0];
@@ -63,7 +62,6 @@ document.addEventListener(
       },
       false
     );
-
     aboutPageButton.addEventListener(
       "mousedown",
       () => {
@@ -76,7 +74,6 @@ document.addEventListener(
       },
       false
     );
-
     workPageButton.addEventListener(
       "mousedown",
       () => {
@@ -89,7 +86,6 @@ document.addEventListener(
       },
       false
     );
-
     contactPageButton.addEventListener(
       "mousedown",
       function () {
@@ -102,7 +98,6 @@ document.addEventListener(
       },
       false
     );
-
     //Form handle
     document.getElementById("contactForm").addEventListener(
       "submit",
@@ -112,7 +107,6 @@ document.addEventListener(
       },
       false
     );
-
     //Close Button
     let buttonClosed = true;
     function openNav() {
