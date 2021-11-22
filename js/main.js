@@ -1,7 +1,7 @@
 document.addEventListener(
   "DOMContentLoaded",
-  function () {
-    function unfade(element) {
+  () => {
+    const unfade = (element) => {
       let op = 0.1; // initial opacity
       element.style.display = "block";
       let timer = setInterval(function () {
@@ -12,8 +12,9 @@ document.addEventListener(
         element.style.filter = "alpha(opacity=" + op * 100 + ")";
         op += op * 0.04;
       }, 10);
-    }
-    function fade(element) {
+    };
+
+    const fade = (element) => {
       let op = 1; // initial opacity
       let timer = setInterval(function () {
         if (op <= 0.1) {
@@ -24,7 +25,8 @@ document.addEventListener(
         element.style.filter = "alpha(opacity=" + op * 100 + ")";
         op -= op * 0.04;
       }, 10);
-    }
+    };
+
     function changePage(currentPage, nextPage) {
       //Checking if page is currently displayed
       if (activePage === nextPage) return 0;
@@ -33,7 +35,7 @@ document.addEventListener(
       unfade(nextPage);
     }
 
-    //unfade(document.body);
+    unfade(document.body);
 
     //Variables
     //Buttons
@@ -51,7 +53,7 @@ document.addEventListener(
     //Handlers for menu buttons
     homePageButton.addEventListener(
       "mousedown",
-      function () {
+      () => {
         changePage(activePage, landingPage);
         if (document.body.clientWidth < 931) {
           buttonClosed ? openNav() : closeNav();
@@ -63,7 +65,7 @@ document.addEventListener(
     );
     aboutPageButton.addEventListener(
       "mousedown",
-      function () {
+      () => {
         changePage(activePage, aboutPage);
         if (document.body.clientWidth < 931) {
           buttonClosed ? openNav() : closeNav();
@@ -75,7 +77,7 @@ document.addEventListener(
     );
     workPageButton.addEventListener(
       "mousedown",
-      function () {
+      () => {
         changePage(activePage, workPage);
         if (document.body.clientWidth < 931) {
           buttonClosed ? openNav() : closeNav();
